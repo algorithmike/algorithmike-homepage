@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: "Michael Fernandez - Software Engineer",
     description: "Homepage of Michael Fernandez",
-    siteUrl: "",
+    siteUrl: "http://",
   },
   plugins: [
     `gatsby-transformer-sharp`,
