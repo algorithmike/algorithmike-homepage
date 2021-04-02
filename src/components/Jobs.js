@@ -27,7 +27,6 @@ const Jobs = () => {
   const [index, setIndex] = React.useState(0);
   const {company, position, date, job_description} = jobs[index];
 
-  console.log(jobs[index])
   return (
     <section className="section jobs">
       <Title title="Experience"></Title>
