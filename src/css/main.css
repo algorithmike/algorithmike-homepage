@@ -769,6 +769,8 @@ Footer
   color: var(--clr-primary-5);
 }
 .footer-links {
+  padding-top: 1rem;
+  justify-content: center;
   margin: 0 auto 1rem auto;
 }
 .footer .social-link {
