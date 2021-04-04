@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
+import Schools from "../components/Schools"
 
 
 export default ({data}) => {
@@ -16,6 +17,7 @@ export default ({data}) => {
       <Hero/>
       <Services/>
       <Jobs/>
+      <Schools/>
       <Projects projects={projects} title="Featured Projects" showLink/>
     </Layout>
   )
