@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
+import resume from '../assets/_MichaelFernandez-Resume-April2021.pdf'
 
 export const query = graphql`
   {
@@ -40,6 +41,7 @@ const About = ({data: {about: {nodes}}}) => {
             <div className="about-stack">
               {stack.map(item => <span key={item.id}>{item.title}</span>)}
             </div>
+            <a href={resume} download><div className="btn">Download My Resume</div></a>
           </article>
         </div>
       </section>

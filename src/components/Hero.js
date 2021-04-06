@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import resume from '../assets/_MichaelFernandez-Resume-April2021.pdf'
 
 const query = graphql`
   {
@@ -26,6 +27,7 @@ const Hero = () => {
           <h1>Hi, I'm Mike</h1>
           <h4>Software Engineer</h4>
           <Link to="/contact" className="btn">Contact Me</Link>
+          <a href={resume} download><div className="btn">Download Resume</div></a>
           <SocialLinks/>
         </div>
       </article>
