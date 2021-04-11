@@ -544,6 +544,9 @@ Services
 Jobs
 ===============
 */
+.jobs {
+  background: var(--clr-grey-15);
+}
 
 .jobs-center {
   width: 80vw;

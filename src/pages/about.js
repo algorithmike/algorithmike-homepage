@@ -3,11 +3,13 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
-import resume from '../assets/_MichaelFernandez-Resume-April2021.pdf'
+
+import Services from "../components/Services"
+import resume from "../assets/_MichaelFernandez-Resume-April2021.pdf"
 
 export const query = graphql`
   {
-    about:allStrapiAbout {
+    about: allStrapiAbout {
       nodes {
         stack {
           id
@@ -27,24 +29,33 @@ export const query = graphql`
   }
 `
 
-const About = ({data: {about: {nodes}}}) => {
-  const {title, stack, info, image} = nodes[0];
+const About = ({
+  data: {
+    about: { nodes },
+  },
+}) => {
+  const { title, stack, info, image } = nodes[0]
 
   return (
     <Layout>
       <section className="about-page">
         <div className="section-center about-center">
-          <Image fluid={image.childImageSharp.fluid} className="about-img"/>
+          <Image fluid={image.childImageSharp.fluid} className="about-img" />
           <article className="about-text">
-            <Title title={title}/>
+            <Title title={title} />
             <p>{info}</p>
             <div className="about-stack">
-              {stack.map(item => <span key={item.id}>{item.title}</span>)}
+              {stack.map(item => (
+                <span key={item.id}>{item.title}</span>
+              ))}
             </div>
-            <a href={resume} download><div className="btn">Download My Resume</div></a>
+            <a href={resume} download>
+              <div className="btn">Download My Resume</div>
+            </a>
           </article>
         </div>
       </section>
+      <Services />
     </Layout>
   )
 }
