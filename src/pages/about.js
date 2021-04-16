@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 
-import Services from "../components/Services"
+// import Services from "../components/Services"
 import resume from "../assets/_MichaelFernandez-Resume-April2021.pdf"
 
 export const query = graphql`
@@ -55,7 +55,7 @@ const About = ({
           </article>
         </div>
       </section>
-      <Services />
+      {/* <Services /> */}
     </Layout>
   )
 }
