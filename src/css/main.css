@@ -157,14 +157,14 @@ p {
 }
 .glow {
   font-family: "Teko", sans-serif;
-  animation: glow 0.75s ease-in-out infinite alternate;
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #8cd6dd;
+    text-shadow: 0 0 10px #00658d;
   }
   to {
-    text-shadow: 0 0 30px #ffffff;
+    text-shadow: 0 0 80px #ff0000;
   }
 }
 /* section */
