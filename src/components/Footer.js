@@ -15,7 +15,7 @@ const Footer = () => {
             Gatsby
           </a>
         </h4>
-        <p>
+        <p className="footer-check">
           Check out the{" "}
           <a
             href="https://github.com/algorithmike/algorithmike-homepage"

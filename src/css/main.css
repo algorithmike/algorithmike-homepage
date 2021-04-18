@@ -773,11 +773,15 @@ Footer
 ===============
 */
 .footer {
+  color: hsl(209, 28%, 39%);
   height: 9rem;
   background: #222;
   text-align: center;
   display: grid;
   place-items: center;
+}
+.footer a {
+  color: hsl(360, 71%, 66%);
 }
 .footer h4 {
   margin-top: 0.5rem;
@@ -785,7 +789,8 @@ Footer
   font-weight: normal;
   text-transform: uppercase;
 }
-.footer h4 span {
+.footer h4 span,
+.footer-check {
   color: var(--clr-primary-5);
 }
 .footer-links {
