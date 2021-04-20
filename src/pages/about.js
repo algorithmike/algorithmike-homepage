@@ -5,7 +5,7 @@ import Title from "../components/Title"
 import Image from "gatsby-image"
 
 // import Services from "../components/Services"
-import resume from "../assets/_MichaelFernandez-Resume-April2021.pdf"
+import resume from "../assets/_MichaelFernandez-Resume-May2021.pdf"
 
 export const query = graphql`
   {

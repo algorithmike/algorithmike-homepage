@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <title>Michael Fernandez | Software Engineer</title>
         <meta
           name="description"
-          content="Learn about some of Michael Fernandez and some of his work experience, education, and personal projects as a software engineer/developer."
+          content="Learn details about Michael Fernandez as a software engineer including his work experience, education, and personal projects."
         />
       </Helmet>
       <Navbar toggleSideBar={toggleSideBar} />
